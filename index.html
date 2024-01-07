@@ -17,48 +17,11 @@
 			href="./src/styles/globals.css"
 		/>
 	</head>
-	<body>
-		<div
-			id="app"
-			class="flex flex-col max-w-screen-md gap-4 p-4 mx-auto"
-		>
-			<header>
-				<form
-					id="control-panel"
-					class="flex gap-4"
-				>
-					<button
-						id="generate-array"
-						type="button"
-						class="px-4 py-2 text-sm border rounded border-zinc-400 bg-zinc-200 disabled:border-zinc-300 disabled:text-zinc-400"
-					>
-						Generate Random Array
-					</button>
-					<button
-						id="sort-array"
-						type="button"
-						class="px-4 py-2 text-sm border rounded border-zinc-400 bg-zinc-200 disabled:border-zinc-300 disabled:text-zinc-400"
-					>
-						Sort Array
-					</button>
-					<input
-						id="array-length"
-						type="range"
-						min="10"
-						value="100"
-						max="100"
-					/>
-				</form>
-			</header>
-			<div
-				id="array-container"
-				data-type="swap"
-				class="flex gap-1"
-			></div>
-		</div>
+	<body class="text-zinc-900">
+		<div id="root"></div>
 		<script
 			type="module"
-			src="/src/main.ts"
+			src="/src/_main.tsx"
 		></script>
 	</body>
 </html>
