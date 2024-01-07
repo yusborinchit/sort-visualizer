@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/vite.svg"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Sort Visualizer</title>
+		<link
+			rel="stylesheet"
+			href="./src/styles/globals.css"
+		/>
+	</head>
+	<body>
+		<div
+			id="app"
+			class="flex flex-col max-w-screen-md gap-4 p-4 mx-auto"
+		>
+			<header>
+				<form
+					id="control-panel"
+					class="flex gap-4"
+				>
+					<button
+						id="generate-array"
+						type="button"
+						class="px-4 py-2 text-sm border rounded border-zinc-400 bg-zinc-200 disabled:border-zinc-300 disabled:text-zinc-400"
+					>
+						Generate Random Array
+					</button>
+					<button
+						id="sort-array"
+						type="button"
+						class="px-4 py-2 text-sm border rounded border-zinc-400 bg-zinc-200 disabled:border-zinc-300 disabled:text-zinc-400"
+					>
+						Sort Array
+					</button>
+					<input
+						id="array-length"
+						type="range"
+						min="10"
+						value="100"
+						max="100"
+					/>
+				</form>
+			</header>
+			<div
+				id="array-container"
+				data-type="swap"
+				class="flex gap-1"
+			></div>
+		</div>
+		<script
+			type="module"
+			src="/src/main.ts"
+		></script>
+	</body>
+</html>
